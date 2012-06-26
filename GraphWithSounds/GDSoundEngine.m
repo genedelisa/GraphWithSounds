@@ -55,8 +55,7 @@
 			   "NewAUGraph");
     
     // create the sampler
-    // for now, just have it play the default sine tone
-	AudioComponentDescription cd = {};
+	AudioComponentDescription cd;
 	cd.componentType = kAudioUnitType_MusicDevice;
 	cd.componentSubType = kAudioUnitSubType_Sampler;
 	cd.componentManufacturer = kAudioUnitManufacturer_Apple;
@@ -174,7 +173,6 @@
 - (void) setPresetNumber:(UInt8) p
 {
     NSLog(@"setPresetNumber %d", p);
-    
     _presetNumber = p;
     
     if(self.processingGraph)

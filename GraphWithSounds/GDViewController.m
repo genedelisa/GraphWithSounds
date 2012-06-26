@@ -204,8 +204,7 @@
 
 - (void)pickerView:(UIPickerView *)thePickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     NSString* s =[self.presetNames objectAtIndex:row];
-    NSLog(@"picked %d", [s intValue]);
-    UInt8 n = [s intValue] - 1;
-    [self.soundEngine setPresetNumber:n];
+    NSLog(@"picked %d, %d or '%@'", [s intValue], row, s);
+    [self.soundEngine setPresetNumber:row];
 }
 @end
