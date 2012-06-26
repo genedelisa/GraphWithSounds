@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GDViewController : UIViewController
-
+@interface GDViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@property (weak, nonatomic) IBOutlet UIButton *noteButton;
+@property (weak, nonatomic) IBOutlet UIPickerView *patchPicker;
+- (IBAction)noteOn:(UIButton *)sender;
+- (IBAction)noteOff:(id)sender;
 @end
