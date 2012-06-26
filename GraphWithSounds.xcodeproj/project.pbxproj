@@ -26,6 +26,7 @@
 		B012A0A11599DEA3009A381D /* GDCoreAudioUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = B012A09E1599DEA3009A381D /* GDCoreAudioUtils.c */; };
 		B012A0A21599DEA3009A381D /* gs_instruments.dls in Resources */ = {isa = PBXBuildFile; fileRef = B012A0A01599DEA3009A381D /* gs_instruments.dls */; };
 		B012A0A61599DEEC009A381D /* GDSoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B012A0A51599DEEC009A381D /* GDSoundEngine.m */; };
+		B012A114159A6CE7009A381D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B012A113159A6CE7009A381D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +67,7 @@
 		B012A0A01599DEA3009A381D /* gs_instruments.dls */ = {isa = PBXFileReference; lastKnownFileType = file; path = gs_instruments.dls; sourceTree = "<group>"; };
 		B012A0A41599DEEC009A381D /* GDSoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSoundEngine.h; sourceTree = "<group>"; };
 		B012A0A51599DEEC009A381D /* GDSoundEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSoundEngine.m; sourceTree = "<group>"; };
-		B012A0AB1599E3A7009A381D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		B012A113159A6CE7009A381D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +100,7 @@
 		B012A0501599DD8D009A381D = {
 			isa = PBXGroup;
 			children = (
+				B012A113159A6CE7009A381D /* README.md */,
 				B012A0651599DD8D009A381D /* GraphWithSounds */,
 				B012A0831599DD8D009A381D /* GraphWithSoundsTests */,
 				B012A05E1599DD8D009A381D /* Frameworks */,
@@ -132,7 +134,6 @@
 		B012A0651599DD8D009A381D /* GraphWithSounds */ = {
 			isa = PBXGroup;
 			children = (
-				B012A0AB1599E3A7009A381D /* README.md */,
 				B012A0A41599DEEC009A381D /* GDSoundEngine.h */,
 				B012A0A51599DEEC009A381D /* GDSoundEngine.m */,
 				B012A09E1599DEA3009A381D /* GDCoreAudioUtils.c */,
@@ -253,6 +254,7 @@
 				B012A06A1599DD8D009A381D /* InfoPlist.strings in Resources */,
 				B012A0731599DD8D009A381D /* MainStoryboard.storyboard in Resources */,
 				B012A0A21599DEA3009A381D /* gs_instruments.dls in Resources */,
+				B012A114159A6CE7009A381D /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
