@@ -1,7 +1,7 @@
 Graph With Sounds
 ======
 
-Core Audio graph example.
+Core Audio graph example that loads either a DLS or SountFont2 file.
 
 What is GraphWithSounds?
 ---------------
