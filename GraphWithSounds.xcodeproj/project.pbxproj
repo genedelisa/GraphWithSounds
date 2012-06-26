@@ -20,6 +20,12 @@
 		B012A0801599DD8D009A381D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012A0611599DD8D009A381D /* Foundation.framework */; };
 		B012A0881599DD8D009A381D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B012A0861599DD8D009A381D /* InfoPlist.strings */; };
 		B012A08B1599DD8D009A381D /* GraphWithSoundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B012A08A1599DD8D009A381D /* GraphWithSoundsTests.m */; };
+		B012A0971599DDA0009A381D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012A0941599DDA0009A381D /* AudioToolbox.framework */; };
+		B012A0981599DDA0009A381D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012A0951599DDA0009A381D /* CoreAudio.framework */; };
+		B012A0991599DDA0009A381D /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B012A0961599DDA0009A381D /* CoreMIDI.framework */; };
+		B012A0A11599DEA3009A381D /* GDCoreAudioUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = B012A09E1599DEA3009A381D /* GDCoreAudioUtils.c */; };
+		B012A0A21599DEA3009A381D /* gs_instruments.dls in Resources */ = {isa = PBXBuildFile; fileRef = B012A0A01599DEA3009A381D /* gs_instruments.dls */; };
+		B012A0A61599DEEC009A381D /* GDSoundEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = B012A0A51599DEEC009A381D /* GDSoundEngine.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,21 +43,30 @@
 		B012A05F1599DD8D009A381D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B012A0611599DD8D009A381D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B012A0631599DD8D009A381D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		B012A0671599DD8D009A381D /* GraphWithSounds-Info.plist */ = {isa = PBXFileReference; path = "GraphWithSounds-Info.plist"; sourceTree = "<group>"; };
+		B012A0671599DD8D009A381D /* GraphWithSounds-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GraphWithSounds-Info.plist"; sourceTree = "<group>"; };
 		B012A0691599DD8D009A381D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B012A06B1599DD8D009A381D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B012A06D1599DD8D009A381D /* GraphWithSounds-Prefix.pch */ = {isa = PBXFileReference; path = "GraphWithSounds-Prefix.pch"; sourceTree = "<group>"; };
-		B012A06E1599DD8D009A381D /* GDAppDelegate.h */ = {isa = PBXFileReference; path = GDAppDelegate.h; sourceTree = "<group>"; };
+		B012A06D1599DD8D009A381D /* GraphWithSounds-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GraphWithSounds-Prefix.pch"; sourceTree = "<group>"; };
+		B012A06E1599DD8D009A381D /* GDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDAppDelegate.h; sourceTree = "<group>"; };
 		B012A06F1599DD8D009A381D /* GDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDAppDelegate.m; sourceTree = "<group>"; };
 		B012A0721599DD8D009A381D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		B012A0741599DD8D009A381D /* GDViewController.h */ = {isa = PBXFileReference; path = GDViewController.h; sourceTree = "<group>"; };
+		B012A0741599DD8D009A381D /* GDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDViewController.h; sourceTree = "<group>"; };
 		B012A0751599DD8D009A381D /* GDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDViewController.m; sourceTree = "<group>"; };
 		B012A07C1599DD8D009A381D /* GraphWithSoundsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphWithSoundsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B012A07D1599DD8D009A381D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		B012A0851599DD8D009A381D /* GraphWithSoundsTests-Info.plist */ = {isa = PBXFileReference; path = "GraphWithSoundsTests-Info.plist"; sourceTree = "<group>"; };
+		B012A0851599DD8D009A381D /* GraphWithSoundsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GraphWithSoundsTests-Info.plist"; sourceTree = "<group>"; };
 		B012A0871599DD8D009A381D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B012A0891599DD8D009A381D /* GraphWithSoundsTests.h */ = {isa = PBXFileReference; path = GraphWithSoundsTests.h; sourceTree = "<group>"; };
+		B012A0891599DD8D009A381D /* GraphWithSoundsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphWithSoundsTests.h; sourceTree = "<group>"; };
 		B012A08A1599DD8D009A381D /* GraphWithSoundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphWithSoundsTests.m; sourceTree = "<group>"; };
+		B012A0941599DDA0009A381D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B012A0951599DDA0009A381D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		B012A0961599DDA0009A381D /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		B012A09E1599DEA3009A381D /* GDCoreAudioUtils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GDCoreAudioUtils.c; sourceTree = "<group>"; };
+		B012A09F1599DEA3009A381D /* GDCoreAudioUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDCoreAudioUtils.h; sourceTree = "<group>"; };
+		B012A0A01599DEA3009A381D /* gs_instruments.dls */ = {isa = PBXFileReference; lastKnownFileType = file; path = gs_instruments.dls; sourceTree = "<group>"; };
+		B012A0A41599DEEC009A381D /* GDSoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSoundEngine.h; sourceTree = "<group>"; };
+		B012A0A51599DEEC009A381D /* GDSoundEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSoundEngine.m; sourceTree = "<group>"; };
+		B012A0AB1599E3A7009A381D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +74,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B012A0971599DDA0009A381D /* AudioToolbox.framework in Frameworks */,
+				B012A0981599DDA0009A381D /* CoreAudio.framework in Frameworks */,
+				B012A0991599DDA0009A381D /* CoreMIDI.framework in Frameworks */,
 				B012A0601599DD8D009A381D /* UIKit.framework in Frameworks */,
 				B012A0621599DD8D009A381D /* Foundation.framework in Frameworks */,
 				B012A0641599DD8D009A381D /* CoreGraphics.framework in Frameworks */,
@@ -100,6 +118,9 @@
 		B012A05E1599DD8D009A381D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B012A0941599DDA0009A381D /* AudioToolbox.framework */,
+				B012A0951599DDA0009A381D /* CoreAudio.framework */,
+				B012A0961599DDA0009A381D /* CoreMIDI.framework */,
 				B012A05F1599DD8D009A381D /* UIKit.framework */,
 				B012A0611599DD8D009A381D /* Foundation.framework */,
 				B012A0631599DD8D009A381D /* CoreGraphics.framework */,
@@ -111,6 +132,12 @@
 		B012A0651599DD8D009A381D /* GraphWithSounds */ = {
 			isa = PBXGroup;
 			children = (
+				B012A0AB1599E3A7009A381D /* README.md */,
+				B012A0A41599DEEC009A381D /* GDSoundEngine.h */,
+				B012A0A51599DEEC009A381D /* GDSoundEngine.m */,
+				B012A09E1599DEA3009A381D /* GDCoreAudioUtils.c */,
+				B012A09F1599DEA3009A381D /* GDCoreAudioUtils.h */,
+				B012A0A01599DEA3009A381D /* gs_instruments.dls */,
 				B012A06E1599DD8D009A381D /* GDAppDelegate.h */,
 				B012A06F1599DD8D009A381D /* GDAppDelegate.m */,
 				B012A0711599DD8D009A381D /* MainStoryboard.storyboard */,
@@ -225,6 +252,7 @@
 			files = (
 				B012A06A1599DD8D009A381D /* InfoPlist.strings in Resources */,
 				B012A0731599DD8D009A381D /* MainStoryboard.storyboard in Resources */,
+				B012A0A21599DEA3009A381D /* gs_instruments.dls in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +290,8 @@
 				B012A06C1599DD8D009A381D /* main.m in Sources */,
 				B012A0701599DD8D009A381D /* GDAppDelegate.m in Sources */,
 				B012A0761599DD8D009A381D /* GDViewController.m in Sources */,
+				B012A0A11599DEA3009A381D /* GDCoreAudioUtils.c in Sources */,
+				B012A0A61599DEEC009A381D /* GDSoundEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +461,7 @@
 				B012A0901599DD8D009A381D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B012A0911599DD8D009A381D /* Build configuration list for PBXNativeTarget "GraphWithSoundsTests" */ = {
 			isa = XCConfigurationList;
@@ -439,6 +470,7 @@
 				B012A0931599DD8D009A381D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
