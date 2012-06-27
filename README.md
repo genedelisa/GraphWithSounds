@@ -1,7 +1,8 @@
 Graph With Sounds
 ======
 
-Core Audio graph example that loads either a DLS or SountFont2 file.
+Core Audio graph example that loads either a DLS or SountFont2 file discussed my my [blog post]
+(http://rockhoppertech.com/blog/ios-sampler-au…-and-sountfont/)
 
 What is GraphWithSounds?
 ---------------
