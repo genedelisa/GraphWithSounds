@@ -8,6 +8,7 @@
 
 #import "GDViewController.h"
 #import "GDSoundEngine.h"
+#import "GDAppDelegate.h"
 
 @interface GDViewController ()
 
@@ -28,7 +29,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.soundEngine = [[GDSoundEngine alloc] init];
+    
+    GDAppDelegate *appDelegate = (GDAppDelegate *) [ [UIApplication sharedApplication] delegate];
+    appDelegate.viewController = self;
+    self.soundEngine = appDelegate.soundEngine;
+    
     // General MIDI names
     self.presetNames = [[NSArray alloc] initWithObjects:
                         @"1 Acoustic Grand Piano",
@@ -160,7 +165,8 @@
                         @"127 Applause",
                         @"128 Gun Shot",
                         nil];
-
+    
+    
 }
 
 - (void)viewDidUnload
@@ -181,7 +187,6 @@
     NSLog(@"on %d", [sender tag]);
     UInt32 velocity = 100;
     [self.soundEngine playNoteOn:[sender tag] :velocity ];
-
 }
 
 - (IBAction)noteOff:(id)sender {
@@ -207,4 +212,5 @@
     NSLog(@"picked %d, %d or '%@'", [s intValue], row, s);
     [self.soundEngine setPresetNumber:row];
 }
+
 @end

@@ -7,14 +7,20 @@
 //
 
 #import "GDAppDelegate.h"
+#import "GDSoundEngine.h"
+
 
 @implementation GDAppDelegate
 
 @synthesize window = _window;
+@synthesize viewController = _viewController;
+@synthesize soundEngine = _soundEngine;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.soundEngine = [[GDSoundEngine alloc] init];
+    // or set the vc's soundEngine here. in this example, the vc asks for it.
+    
     return YES;
 }
 							

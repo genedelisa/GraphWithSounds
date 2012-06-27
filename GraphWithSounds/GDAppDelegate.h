@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GDViewController.h"
+#import "GDSoundEngine.h"
 
 @interface GDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic, retain) IBOutlet GDViewController *viewController;
+
+@property (strong, nonatomic) id soundEngine;
 
 @end
